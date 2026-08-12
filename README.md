@@ -1,3 +1,43 @@
+# Hermes YouTube Plugin
+
+Manage your **YouTube subscriptions and feed** from [Hermes Agent](https://github.com/e8kor/hermes-agent)
+— list subscriptions, show recent uploads, and identify channels to prune. Uses the official
+YouTube Data API v3 (read-only) via your existing Google OAuth.
+
+- **Status** — connected channel, subscriber/video counts.
+- **Subscriptions** — list channels you follow.
+- **Feed** — recent uploads from subscribed channels.
+
+## Install (community)
+
+Requires [Hermes Agent](https://github.com/e8kor/hermes-agent), Python 3.9+, and a Google OAuth
+token that includes the `youtube.readonly` scope. Enable the **YouTube Data API v3** in your
+Google Cloud project first.
+
+```bash
+git clone https://github.com/e8kor/hermes-youtube-plugin.git
+cd hermes-youtube-plugin
+./install.sh                      # copies plugin + installs deps (google-api-python-client)
+hermes plugins enable youtube     # takes effect next session
+```
+
+## Package layout
+
+```
+hermes-youtube-plugin/
+├── install.sh        # one-shot installer
+├── requirements.txt  # pip deps
+├── plugin/           # the plugin source (→ ~/.hermes/plugins/youtube)
+├── skills/           # bundled SKILL.md guidance
+└── LICENSE           # MIT
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
 # YouTube Plugin
 
 Manage your YouTube subscriptions and feed. Uses the official YouTube Data
