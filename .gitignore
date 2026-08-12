@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+tokens.json
+store.json
+google_token.json
+.env
