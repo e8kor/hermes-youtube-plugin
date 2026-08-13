@@ -98,3 +98,7 @@ is the shared `~/.hermes/google_token.json`.
 ## Debugging
 
 `YOUTUBE_DEBUG=1` (or `--debug`) prints `[youtube]` trace to stderr.
+
+## Table output
+
+List and detail commands render as aligned monospace tables in the terminal, not raw JSON.
